@@ -14,14 +14,13 @@
 # TIP: Don't start your variable names with capital letters, otherwise Ruby will think you want to make a constant instead of a variable. Making a constant is a way of giving a name to a value that won't ever be reassigned.
 
 
-def celcius_to_far
-  puts "What's the temperature in Farhenheit?"
-
-  temp_far = gets.chomp
-  temp_far = temp_far.to_i
-
+def celcius_to_far(temp_far)
   celcius = (temp_far - 32) * 5 / 9
   puts "#{temp_far} degrees Farhenheit is #{celcius} degrees Celcius"
 end
 
-celcius_to_far
+puts "What's the temperature in Farhenheit?"
+temp_far = gets.chomp
+temp_far = temp_far.to_i
+
+celcius_to_far(temp_far)
