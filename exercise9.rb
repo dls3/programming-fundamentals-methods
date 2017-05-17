@@ -35,12 +35,12 @@ end
 
 def include_bananas(grocery_list)
   if grocery_list.include?("bananas") == false
-    puts "You need to pick up bananas."
+    "You need to pick up bananas."
   end
 end
 
 def grocery_length(grocery_list)
-  puts "There are #{grocery_list.length} items in your list."
+  "There are #{grocery_list.length} items in your list."
 end
 
 def delete_salmon(grocery_list)
@@ -50,6 +50,6 @@ def delete_salmon(grocery_list)
 end
 
 new_line(grocery_list)
-include_bananas(grocery_list)
-grocery_length(grocery_list)
+puts include_bananas(grocery_list)
+puts grocery_length(grocery_list)
 delete_salmon(grocery_list)

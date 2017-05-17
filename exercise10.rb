@@ -28,7 +28,7 @@ students = {
 
 def cohort_display(students)
   students.each do |name, num|
-    puts "#{name}: #{num} students"
+    "#{name}: #{num} students"
   end
 end
 
@@ -38,14 +38,14 @@ end
 
 def output_names(students)
   students.each do |name, num|
-    puts "#{name}"
+    "#{name}"
   end
 end
 
 def increase_size(students)
   students.each do |name, num|
     num = (num * 1.05).to_i
-    puts "#{name}: #{num} students"
+    "#{name}: #{num} students"
   end
 end
 
@@ -58,7 +58,7 @@ def class_size(students)
   students.each do |cohort, size|
     total = total + size
   end
-  puts "the total number of students across all cohorts is #{total}"
+  "the total number of students across all cohorts is #{total}"
 end
 
 # BONUS: Create another similar hash called staff and display it using the same method.
@@ -68,9 +68,8 @@ staff = {
   :staff3 => 3,
 }
 
-
 #display initial hash
-cohort_display(students)
+puts cohort_display(students)
 puts "\n\n"
 
 # add cohort 4 of the hash
@@ -78,24 +77,24 @@ add_cohort4(students)
 puts "\n\n"
 
 #output new hash, including cohort 4
-output_names(students)
+puts output_names(students)
 puts "\n\n"
 
 
 puts "Increase cohort sizes by 5%, then display results"
-increase_size(students)
+puts increase_size(students)
 puts "\n\n"
 
 ### Delete 2nd cohort, and redisplay
 delete_cohort2(students)
-cohort_display(students)
+puts cohort_display(students)
 puts "\n\n"
 
 #Calculate total number of students across all cohorts
-class_size(students)
+puts class_size(students)
 puts "\n\n"
 
 #display staff hash
-cohort_display(staff)
+puts cohort_display(staff)
 puts "\n\n"
 #
