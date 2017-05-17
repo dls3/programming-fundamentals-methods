@@ -15,7 +15,7 @@
 
 
 def celcius_to_far(temp_far)
-  celcius = (temp_far - 32) * 5 / 9
+  celcius = (temp_far - 32.0) * 5.0 / 9.0
   "#{temp_far} degrees Farhenheit is #{celcius} degrees Celcius"
 end
 

@@ -21,7 +21,7 @@
 def greet_backwards(name)
 
   name = name.reverse!
-  # name = "#{name}#{name}"
+  name = "#{name}#{name}"
 
   "Hello, #{name}! Welcome home."
 

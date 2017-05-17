@@ -9,11 +9,11 @@
 #
 # ---===###new message###===---
 
+
 def wrap_text(text, symbol)
-  "#{symbol}#{text}#{symbol}"
-  puts string
+  puts "#{symbol}#{text}#{symbol}"
   return
 end
 
 wrap_text('hello', '===')
-wrap_text('Welcome', '*********')
+wrap_text('new message', '###===---')

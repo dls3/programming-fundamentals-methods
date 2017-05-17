@@ -12,7 +12,6 @@
 
 
 def add_expenses(expenses)
-
   sum = expenses.reduce(0) do |expense, total|
     total = total + expense
   end
