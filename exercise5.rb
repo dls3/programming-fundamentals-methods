@@ -21,14 +21,13 @@
 def greet_backwards(name)
 
   name = name.reverse!
-  name = "#{name}#{name}"
+  # name = "#{name}#{name}"
 
-  puts "Hello, #{name}! Welcome home."
-  return
+  "Hello, #{name}! Welcome home."
 
 end
 
-greet_backwards("Bob")
-greet_backwards("Shirly")
-greet_backwards("Sue")
-greet_backwards("Andy")
+puts greet_backwards("Bob")
+puts greet_backwards("Shirly")
+puts greet_backwards("Sue")
+puts greet_backwards("Andy")
