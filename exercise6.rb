@@ -16,11 +16,11 @@
 
 def celcius_to_far(temp_far)
   celcius = (temp_far - 32) * 5 / 9
-  puts "#{temp_far} degrees Farhenheit is #{celcius} degrees Celcius"
+  "#{temp_far} degrees Farhenheit is #{celcius} degrees Celcius"
 end
 
 puts "What's the temperature in Farhenheit?"
 temp_far = gets.chomp
 temp_far = temp_far.to_i
 
-celcius_to_far(temp_far)
+puts celcius_to_far(temp_far)

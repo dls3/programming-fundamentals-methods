@@ -43,8 +43,13 @@ def grocery_length(grocery_list)
   puts "There are #{grocery_list.length} items in your list."
 end
 
-def delete_item(grocery_list)
+def delete_salmon(grocery_list)
+  if grocery_list.include?("salmon") == true
+    grocery_list.delete("salmon")
+  end
+end
 
 new_line(grocery_list)
 include_bananas(grocery_list)
 grocery_length(grocery_list)
+delete_salmon(grocery_list)
