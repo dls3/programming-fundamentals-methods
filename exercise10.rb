@@ -80,7 +80,6 @@ puts "\n\n"
 puts output_names(students)
 puts "\n\n"
 
-
 puts "Increase cohort sizes by 5%, then display results"
 puts increase_size(students)
 puts "\n\n"
@@ -97,4 +96,3 @@ puts "\n\n"
 #display staff hash
 puts cohort_display(staff)
 puts "\n\n"
-#

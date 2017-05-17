@@ -25,31 +25,72 @@
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-def new_line(grocery_list)
-  grocery_list.sort!
-  puts "Your alphabetized grocery list:"
-  grocery_list.each do |num|
+def new_line(list)
+  puts "Your grocery list:"
+  list.each do |num|
     puts "*#{num}\n"
   end
 end
 
-def include_bananas(grocery_list)
-  if grocery_list.include?("bananas") == false
-    "You need to pick up bananas."
+def add_item(list, item)
+  list << item
+  puts "Added #{item} to your list"
+end
+
+def include_bananas(list, item)
+  if list.include?(item) == false
+    "You need to pick up #{item}(s)."
   end
 end
 
-def grocery_length(grocery_list)
-  "There are #{grocery_list.length} items in your list."
+def second_item(list)
+  list[1]
 end
 
-def delete_salmon(grocery_list)
-  if grocery_list.include?("salmon") == true
-    grocery_list.delete("salmon")
+def grocery_length(list)
+  "There are #{list.length} items in your list."
+end
+
+def sort_alph(list)
+  list.sort!
+end
+
+def delete_salmon(list)
+  if list.include?("salmon") == true
+    list.delete("salmon")
   end
 end
 
+#Display items as a list
+puts "Display items as a list"
 new_line(grocery_list)
-puts include_bananas(grocery_list)
+puts "\n"
+
+# add rice to list using method
+puts "Adding rice to list"
+add_item(grocery_list, 'rice')
+puts grocery_list
+puts "\n"
+
+# output total number of items in list
 puts grocery_length(grocery_list)
+puts "\n"
+
+#Check if list includes bananas (or any item)
+puts include_bananas(grocery_list, 'bananas')
+puts "\n"
+
+# Output second item of list
+puts "The second item of the list is: #{second_item(grocery_list)}"
+puts "\n"
+
+#Sort list alphabetically, output
+sort_alph(grocery_list)
+puts "Alphabetize the list"
+new_line(grocery_list)
+puts "\n"
+
+# Delete salmon from the list
 delete_salmon(grocery_list)
+puts "Deleting salmon"
+new_line(grocery_list)
