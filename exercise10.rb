@@ -61,12 +61,6 @@ def class_size(students)
   "the total number of students across all cohorts is #{total}"
 end
 
-# BONUS: Create another similar hash called staff and display it using the same method.
-staff = {
-  :staff1 => 9,
-  :staff2 => 11,
-  :staff3 => 3,
-}
 
 #display initial hash
 puts cohort_display(students)
@@ -92,6 +86,13 @@ puts "\n\n"
 #Calculate total number of students across all cohorts
 puts class_size(students)
 puts "\n\n"
+
+# BONUS: Create another similar hash called staff and display it using the same method.
+staff = {
+  :staff1 => 9,
+  :staff2 => 11,
+  :staff3 => 3,
+}
 
 #display staff hash
 puts cohort_display(staff)

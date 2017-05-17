@@ -28,7 +28,7 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 def new_line(list)
   puts "Your grocery list:"
   list.each do |num|
-    puts "*#{num}\n"
+    puts "*#{num}"
   end
 end
 
