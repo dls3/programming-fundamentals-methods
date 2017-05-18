@@ -2,16 +2,6 @@
 #
 # Your backyard is 10 metres deep. You need to call their name if they leave your backyard (ie. if their position is greater than 10).
 #
-# Create an array of dogs as follows:
-#
-# my_dogs = [
-#   { :name => 'Ralph', :position => 5 },
-#   { :name => 'Cindy', :position => 8 },
-#   { :name => 'Jade', :position => 11 },
-# ]
-#
-# Notice that each 'dog' is actually a hash - a set of key value pairs. The two keys we need for each dog are :name and :position.
-#
 # Figure out which dogs have left the backyard. Write a method called get_absent_dogs that takes an array of dogs (hashes)
 # as an argument and returns an array of dogs (that are absent).
 #
@@ -23,3 +13,28 @@
 # to the previous one. Call the method call_absent_dogs with each set of dogs.
 #
 # This problem emphasises the need to break down problems into smaller parts. Always try to solve one problem at a time.
+
+
+my_dogs = [
+  { :name => 'Ralph', :position => 5 },
+  { :name => 'Cindy', :position => 8 },
+  { :name => 'Jade', :position => 11 },
+]
+
+def get_absent_dogs(array)
+
+  array.each do |dog|
+    if dog[:position] >= 10
+      dog
+    end
+  end
+end
+
+
+# my_dogs.each do |dog|
+#   if dog[:position] >= 10
+#     puts dog
+#   end
+# end
+
+puts get_absent_dogs(my_dogs)
